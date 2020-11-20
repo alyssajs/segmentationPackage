@@ -18,3 +18,14 @@ for creating i segments up to data point j
 \description{
 Title
 }
+\examples{
+if(!file.exists("data-for-LOPART-signals.csv.gz"))
+{
+ download.file(
+   "https://raw.githubusercontent.com/tdhock/LOPART-paper/master/data-for-LOPART-labels.csv.gz",
+   "data-for-LOPART-signals.csv.gz")
+}
+signals.dt <- data.table::fread("data-for-LOPART-signals.csv.gz")
+singleSeq.dt <- signals.dt[sequenceID=="20167.22",]
+myResult <- DYNPROG(singleSeq.dt$logratio, 5)
+}
