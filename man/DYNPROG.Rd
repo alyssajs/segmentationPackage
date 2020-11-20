@@ -27,5 +27,5 @@ if(!file.exists("data-for-LOPART-signals.csv.gz"))
 }
 signals.dt <- data.table::fread("data-for-LOPART-signals.csv.gz")
 singleSeq.dt <- signals.dt[sequenceID=="20167.22",]
-myResult <- DYNPROG(singleSeq.dt$logratio, 5)
+DYNPROG(singleSeq.dt$logratio, 5)
 }
