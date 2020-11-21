@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# segmentationPackage
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This package includes a dynamic programming algorithm for segmentation
+and a principal components analysis algorithm.
+
+## Installation
+
+You can install this package from [GitHub](https://github.com/alyssajs/segmentationPackage) with:
+
+``` r
+remotes::intall_githum("alyssajs/segmentationPackage)
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(segmentationPackage)
+## basic example code
+PCA(iris[,2:3])
+sampleVec <- 1:30
+DYNPROG(sampleVec, 5)
+```
+
