@@ -21,3 +21,9 @@ A vector of optimal costs
 \description{
 Title
 }
+\examples{
+testVec <- 1:30
+qVec <- sum(testVec^2)
+sVec <- sum(testVec)
+cost <- getOptimalCost(qVec, sVec, 1, 4)
+}
