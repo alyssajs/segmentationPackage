@@ -2,7 +2,7 @@
 % Please edit documentation in R/dynprog.R
 \name{getOptimalCost}
 \alias{getOptimalCost}
-\title{Title}
+\title{Get optimal cost for new segment}
 \usage{
 getOptimalCost(qVec, sVec, start, end)
 }
@@ -19,7 +19,7 @@ getOptimalCost(qVec, sVec, start, end)
 A vector of optimal costs
 }
 \description{
-Title
+Get optimal cost for new segment
 }
 \examples{
 testVec <- 1:30

@@ -2,7 +2,7 @@
 % Please edit documentation in R/PCA.R
 \name{PCA}
 \alias{PCA}
-\title{Title}
+\title{Perform principal components analysis}
 \usage{
 PCA(data.matrix)
 }
@@ -13,7 +13,7 @@ PCA(data.matrix)
 A rotation matrix, a matrix of loadings, and a center matrix
 }
 \description{
-Title
+Perform principal components analysis
 }
 \examples{
 PCA(iris[,2:3])

@@ -2,7 +2,7 @@
 % Please edit documentation in R/dynprog.R
 \name{DYNPROG}
 \alias{DYNPROG}
-\title{Title}
+\title{Optimal segmentation with dynamic programming}
 \usage{
 DYNPROG(dataVec, maxSegs)
 }
@@ -16,9 +16,9 @@ A cost matrix with the entry at (i, j) being the optimal cost
 for creating i segments up to data point j
 }
 \description{
-Title
+Optimal segmentation with dynamic programming
 }
 \examples{
 sampleVec <- 1:30
-DYNPROG(sampleVec, 5)
+result <- DYNPROG(sampleVec, 5)
 }
